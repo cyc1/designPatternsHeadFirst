@@ -2,11 +2,13 @@ import java.util.ArrayList;
 
 public class WeatherData implements Subject {
 	private ArrayList observers;
+		// 用一个ArrayList来纪录观察者
 	private float temperature;
 	private float humidity;
 	private float pressure;
 
 	public WeatherData() {
+		// 在构造器中建立ArrayList
 		observers = new ArrayList();
 	}
 
